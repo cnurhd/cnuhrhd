@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+
+@font-face {
+    src: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap';
+    font-family: "Noto Sans KR";
+    font-style: normal;
+}
+
+@font-face {
+    src: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap';
+    font-family: "Noto Sans KR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    src: local('※');
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+
+body {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.md-grid {
+    max-width: 1440px; 
+}
+
+.md-sidebar--primary {
+    max-width: 250px
+}
+
+.md-sidebar--secondary {
+    max-width: 230px
+}
+
+.md-sidebar__scrollwrap {
+    margin-left: 0.1rem;
+}
+
+
+/*위메뉴 설정*/
+.md-tabs__link{
+    font-size: 0.8rem;
+}
+
+.md-main {
+    background-color: #f8f8fa;
+}
+
+.md-content__inner.md-typeset {
+    background: #fff;
+    border: 1px solid #dde0e7;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 8%);
+    margin-top:1.2rem;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;    
+    padding-left: 2em;
+    font-size: 0.75rem;
+    font-family: 'Roboto' ,'Noto Sans KR', 'sans-serif';
+    letter-spacing :100%;
+}   
+
+.md-content__inner.md-typeset
+    > h1 {
+        color: rgba(0, 0, 0, 0.900);
+        font-weight: bold;
+        font-size: 1.5rem;
+}
+
+.md-content__inner.md-typeset
+    > h2 {
+        color: rgba(0, 0, 0, 0.870);
+        font-weight: 500;
+        font-size: 1.2rem;
+}
+
+.md-content__inner.md-typeset
+    > h3 {
+        color: rgba(0, 0, 0, 0.850);
+        font-weight: 500;
+        font-size: 0.95rem;
+}
+
+.md-content__inner.md-typeset
+    > h4 {
+        color: rgba(0, 0, 0, 0.820);
+        font-weight: 500;
+        font-size: 0.8rem;
+}
+
+.md-nav {
+    font-size: .68rem;
+    line-height: 1.5;
+}
+
+
+/*
+.md-typeset {
+    font-size: px2rem(12px);
+    line-height: 1.4;
+    color-adjust: exact;
+}
+*/
+
+.md-nav.md-nav--primary > ul {
+    font-size: 1.2rem;
+    font-weight : bold;
+} 
+
+/* 왼쪽nav 선택*/
+
+/* 왼쪽 nav 제목*/
+.md-nav.md-nav--primary.md-nav--lifted  {
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.700);
+    padding-left: 1em;
+}
+
+/* 왼쪽 nav - active 메뉴 설정*/
+.md-nav__item.md-nav__item--active.md-nav__item--nested  
+   > nav.md-nav > ul.md-nav__list > li.md-nav__item > label.md-nav__link {
+    font-size: 0.8rem;
+    font-weight : 600;
+    color: rgba(0, 0, 0, 0.700);
+    line-height : 1.5rem;
+}
+
+/* 왼쪽 nav - nested 메뉴 설정*/
+.md-nav__item.md-nav__item--nested  
+   > nav.md-nav > ul.md-nav__list > li.md-nav__item > a.md-nav__link {
+    font-size: 0.8rem;
+    font-weight : 600;
+    line-height : 1.5rem;
+}
+
+/* 왼쪽 nav - nested 메뉴 안 설정*/
+.md-nav__item.md-nav__item--active.md-nav__item--nested  
+   > nav.md-nav > ul.md-nav__list > li.md-nav__item > nav.md-nav > ul.md-nav__list 
+   > li.md-nav__item > a.md-nav__link {
+       font-size: 0.75rem;
+       font-weight: 600;
+       line-height : 1rem;
+       padding-left : 0.06rem;
+   }
+
+/* 왼쪽 nav - nested 메뉴 안 왼쪽 직선 설정*/
+.md-nav__item.md-nav__item--active.md-nav__item--nested  
+   > nav.md-nav > ul.md-nav__list > li.md-nav__item > nav.md-nav > ul.md-nav__list {
+    border-left: 0.8px solid;
+    border-left-color:rgba(41, 41, 41, 0.400);
+    margin-left: 0.2rem;
+   }
+
+/* 오른쪽 메뉴 안 왼쪽 직선 설정*/
+.md-nav.md-nav--secondary > ul.md-nav__list > li.md-nav__item > nav.md-nav > ul.md-nav__list {
+    border-left: 0.8px solid;
+    border-left-color:rgba(41, 41, 41, 0.200);
+    margin-left: 0.5rem;
+}
+
+/* 오른쪽 nav 제목*/
+.md-nav.md-nav--secondary > label.md-nav__title  {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
