@@ -9,8 +9,8 @@
 
 table.incidence {
   border-collapse: collapse;
-  font-size: 0.7 rem;
-  min-width: 400px;
+  width: 100%;
+  font-size: 0.65rem;
   line-height: 15px;
 }
 
@@ -68,8 +68,7 @@ table.incidence tbody tr:last-of-type {
 /*=======================================*/
 table.basic {
   border-collapse: collapse;
-  font-size: 0.7 rem;
-  min-width: 400px;
+  font-size: 0.65rem;
   width: 100%;
   line-height: 20px;
 }
@@ -140,7 +139,7 @@ table.entry {
   width: 100%;
   vertical-align: middle;
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   line-height: 40px;
   border-collapse: separate;
   border-spacing: 0;
@@ -209,7 +208,7 @@ table.entry tbody tr.footer td {
 
 table.classification {
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   line-height: 40px;
   border-collapse: separate;
   border-spacing: 0;
@@ -363,7 +362,7 @@ table.note tbody tr.footer td {
 table.definition {
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   min-width: 400px;
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
