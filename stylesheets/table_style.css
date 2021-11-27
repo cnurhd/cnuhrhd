@@ -106,7 +106,7 @@ table.basic td:first-child {
 }
 
 table.basic tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 table.basic tbody tr:nth-of-type(even) {
@@ -125,7 +125,7 @@ table.basic tbody tr:last-of-type {
 /*
 .basic tbody tr.active-row {
   font-weight: bold;
-  color: #009879;
+  color: #68a2a8;
 }
 */
 
@@ -149,6 +149,7 @@ table.md_basic_2 thead tr {
 table.md_basic_2 thead tr.header {
   background-color: #68a2a8;
   color: white;
+  font-weight: bolder;
   text-align: left;
 }
 
@@ -156,7 +157,7 @@ table.md_basic_2 th,
 table.md_basic_2 td {
   padding: 12px 15px;
   vertical-align: top;
-}
+  }
 
 table.md_basic_2 th:first-child,
 table.md_basic_2 td:first-child {
@@ -416,11 +417,10 @@ table.definition {
   margin: 25px 0;
   font-size: 0.65rem;
   width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 table.definition thead tr.score {
-  background-color: #009879;
+  background-color: #68a2a8;
   color: #ffffff;
   text-align: left;
   box-shadow: 0 0 0 0;
@@ -466,13 +466,78 @@ cursor: default;
 }
 
 table.definition tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #68a2a8;
 }
 
 /*
 .definition tbody tr.active-row {
   font-weight: bold;
-  color: #009879;
+  color: #68a2a8;
 }
 */
 
+
+
+table.definition_sle {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.65 rem;
+  min-width: 400px;
+  width: 100%;
+  line-height: 20px;
+}
+
+
+table.definition_sle thead tr.score {
+  background-color: #68a2a8;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+box-shadow: 0 0 0 0;
+}
+
+table.definition_sle thead tr:last-child {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: black;
+  text-align: left;
+font-weight: bolder;
+box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+table.definition_sle th,
+table.definition_sle td {
+  padding: 12px 15px;
+
+}
+
+table.definition_sle th:first-child,
+table.definition_sle td:first-child {
+  padding: 12px 15px;
+}
+
+table.definition_sle tbody tr {
+  border-bottom: 1px solid #dddddd;
+
+}
+
+/*
+table.definition_sle tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+*/
+
+table.definition_sle tbody tr:hover {
+background-color: #f2f2f2;
+cursor: default;
+}
+
+table.definition_sle tbody tr:last-of-type {
+  border-bottom: 2px solid #68a2a8;
+}
+
+table.definition_sle tbody tr.active-row {
+  background-color: azure;
+  font-weight: bold;
+  color: #009879;
+}
+*/
