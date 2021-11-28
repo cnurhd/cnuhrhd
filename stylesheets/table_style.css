@@ -134,6 +134,7 @@ table.basic tbody tr:last-of-type {
 /*==============================*/
 
 table.md_basic_2 {
+  width: 100%;
   border-collapse: collapse;
   font-size: 0.65rem;
   
