@@ -134,14 +134,12 @@ table.basic tbody tr:last-of-type {
 /*==============================*/
 
 table.md_basic_2 {
-  width: 100%;
   border-collapse: collapse;
-  font-size: 0.65rem;
-  
+  font-size: 0.5 em;
 }
 
 table.md_basic_2 thead tr {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #C0C0C0;
   color: black;
   text-align: left;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.6);
@@ -150,15 +148,20 @@ table.md_basic_2 thead tr {
 table.md_basic_2 thead tr.header {
   background-color: #68a2a8;
   color: white;
-  font-weight: bolder;
+  font-weight:bold;
+  text-align: left;
+}
+
+table.md_basic_2 thead tr.contents {
+  background-color: white;
+  color: black;
   text-align: left;
 }
 
 table.md_basic_2 th,
 table.md_basic_2 td {
   padding: 12px 15px;
-  vertical-align: top;
-  }
+}
 
 table.md_basic_2 th:first-child,
 table.md_basic_2 td:first-child {
@@ -171,15 +174,27 @@ table.md_basic_2 tbody tr {
 }
 
 table.md_basic_2 tbody tr td.term {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
 table.md_basic_2 tbody tr:hover {
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.09);
   cursor: default;
 }
 
+table.md_basic_2 tbody tr.blank {
+  border-top: 0.2px solid #c0c0c0;
+  border-bottom: 0.2px solid #c0c0c0;
+  background-color: white;
+  pointer-events: none;
+  text-align: left;
+}
+
 table.md_basic_2 tbody tr:last-of-type {
+  border-bottom: 1.5px solid #68a2a8;
+}
+
+table.md_basic_2 tbody tr.last {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
 }
 
