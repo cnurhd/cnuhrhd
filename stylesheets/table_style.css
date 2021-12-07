@@ -136,10 +136,11 @@ table.basic tbody tr:last-of-type {
 table.md_basic_2 {
   border-collapse: collapse;
   font-size: 0.5 em;
+  width: 100 %;
 }
 
 table.md_basic_2 thead tr {
-  background-color: #C0C0C0;
+  background-color: rgba(0, 0, 0, 0.1);
   color: black;
   text-align: left;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.6);
@@ -173,21 +174,21 @@ table.md_basic_2 tbody tr {
   text-align: left;
 }
 
-table.md_basic_2 tbody tr td.term {
-  background-color: rgba(0, 0, 0, 0.07);
-}
-
-table.md_basic_2 tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.09);
-  cursor: default;
-}
-
 table.md_basic_2 tbody tr.blank {
   border-top: 0.2px solid #c0c0c0;
   border-bottom: 0.2px solid #c0c0c0;
   background-color: white;
   pointer-events: none;
   text-align: left;
+}
+
+table.md_basic_2 tbody tr td.term {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+table.md_basic_2 tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
 }
 
 table.md_basic_2 tbody tr:last-of-type {
