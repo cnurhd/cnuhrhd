@@ -135,8 +135,8 @@ table.basic tbody tr:last-of-type {
 
 table.md_basic_2 {
   border-collapse: collapse;
-  font-size: 0.5 em;
-  width: 100 %;
+  font-size: 0.65rem;
+  width: 100%;
 }
 
 table.md_basic_2 thead tr {
