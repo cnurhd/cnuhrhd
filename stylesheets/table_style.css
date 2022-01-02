@@ -68,7 +68,7 @@ table.incidence tbody tr:last-of-type {
 /*=======================================*/
 table.basic {
   border-collapse: collapse;
-  font-size: 0.65rem;
+  font-size: 14px;
   width: 100%;
   line-height: 20px;
 }
@@ -135,7 +135,7 @@ table.basic tbody tr:last-of-type {
 
 table.md_basic_2 {
   border-collapse: collapse;
-  font-size: 0.65rem;
+  font-size: 14px;
   width: 100%;
 }
 
