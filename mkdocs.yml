@@ -1,0 +1,54 @@
+site_name: CNUH.Rheumatology
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/table_style.css
+plugins:
+  - search
+  - git-revision-date
+  - git-revision-date-localized
+theme:
+  name: material
+  font:
+    text : Lato
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  palette:
+    accent: indigo
+markdown_extensions:
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - tables
+
+nav:
+  - Home: 'index.md'
+  - Docs: 
+     - "Introduction" : 
+        - "Approach" : 'intro/approach.md'
+        - "Criteria" : 'intro/criteria.md'
+        - "div" : 'intro/div.md'
+     - "Dx. Tests & Meds" : 'approach.md'
+     - "Rheumatoid Arthritis" : 'ra/ra.md'
+     - "SLE & APS " : 
+        - "SLE" : 'sle&aps/sle.md'
+        - "APS" : 'sle&aps/aps.md'
+     - "Sjögren's syndrome" : 'sjogren/ss.md'
+     - "Systemic Sclerosis" : 'SSc/ssc.md'
+     - "Idiopathic Inflammatory Myositis" : 'myopathy/iim.md'
+     - "Spondyloarthropathy" : 'spondyloarthropathy/spa.md'
+     - "Vasculitis" : 'vasculitis/vasculitis.md'
+     - "Crystalopathy" : 'crystalopathy/gout.md'
+     - "Osteoporosis" : 'osteoporosis/osteoporosis.md'
+     - "Pain" : 'pain/pain.md'
+     - "Other diseases" : 'other_diseases/others.md'
+     - "Miscellaneous" : 
+        - "Perioperative" : 'misc/perioperative.md'
+        - "Misc" : 'misc/misc.md'
